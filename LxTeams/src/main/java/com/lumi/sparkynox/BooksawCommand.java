@@ -52,7 +52,7 @@ public class BooksawCommand extends BukkitCommand {
 	public boolean execute(@NotNull CommandSender sender, @NotNull String label, String[] args) {
 		// No args + player = open GUI
 		if (args.length == 0 && sender instanceof org.bukkit.entity.Player player) {
-			if (label.equalsIgnoreCase("lxteam")) {
+			if (getName().equalsIgnoreCase("lxteam")) {
 				com.lumi.sparkynox.gui.TeamGUI.open(player);
 				return true;
 			}
