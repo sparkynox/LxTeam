@@ -304,3 +304,7 @@ commands:
   creator:
     description: View info about the plugin creator
     usage: /creator
+  teamadmin:
+    description: LxTeams admin command
+    usage: /teamadmin [subcommand]
+    aliases: [teama]
