@@ -60,6 +60,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map.Entry;
 import java.util.Objects;
 import java.util.logging.Level;
@@ -423,8 +425,10 @@ public class Main extends JavaPlugin {
 					new WithdrawCommand(teamCommand));
 		}
 
+		List<String> teamaAliases = new ArrayList<>(getConfig().getStringList("command.teama"));
+		if (!teamaAliases.contains("teama")) teamaAliases.add("teama");
 		new BooksawCommand("teamadmin", teamaCommand, "betterteams.admin", "All admin commands for teams",
-				getConfig().getStringList("command.teama"));
+				teamaAliases);
 
 	}
 
