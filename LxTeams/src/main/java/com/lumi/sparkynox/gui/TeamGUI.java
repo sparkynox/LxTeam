@@ -51,7 +51,7 @@ public class TeamGUI implements Listener {
         inv.setItem(17, makeItem(Material.DIAMOND,              ChatColor.AQUA + "Team Rank",             ChatColor.GRAY + "View or manage player ranks",               "/lxteam rank"));
 
         // Row 3: Teleport / Warp
-        inv.setItem(18, makeItem(Material.BED,                  ChatColor.GREEN + "Set Home",             ChatColor.GRAY + "Set your team home location",              "/lxteam sethome"));
+        inv.setItem(18, makeItem(Material.RED_BED,                  ChatColor.GREEN + "Set Home",             ChatColor.GRAY + "Set your team home location",              "/lxteam sethome"));
         inv.setItem(19, makeItem(Material.COMPASS,              ChatColor.YELLOW + "Home",                ChatColor.GRAY + "Teleport to team home",                    "/lxteam home"));
         inv.setItem(20, makeItem(Material.REDSTONE,             ChatColor.RED + "Delete Home",            ChatColor.GRAY + "Remove your team home",                    "/lxteam delhome"));
         inv.setItem(21, makeItem(Material.ENDER_PEARL,          ChatColor.LIGHT_PURPLE + "Set Warp",      ChatColor.GRAY + "Create a team warp",                       "/lxteam setwarp"));
